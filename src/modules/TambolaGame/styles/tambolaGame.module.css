@@ -1,0 +1,42 @@
+.main{
+    display: flex;
+}
+.tng_container {
+    --border-color: #ccc;
+    --dark-border-color: #ff1a75;
+    --text-color: #24c5ff;
+    --text-heading-color: #00b0f0;
+    --num-color: #ccc;
+    --num-gen-color: #fff;
+    --num-gen-bg-color2: #54d400;
+    --num-gen-bg-color: #32bff3;
+    --num-gen-text-shadow: 0px 0px #000;
+    --dark-bg-color2: #54d400;
+    --dark-bg-color: #32bff3;
+    --mid-bg-color: #7fd7f7;
+    --lite-bg-color: #f4fbfe;
+    --lingo-text-color: #00b0f0;
+    --lingo-bg-color: #f4fbfe;
+    --counter-text-color: #00b0f0;
+    --counter-bg-color: #f4fbfe;
+    --generator-text-color: #00b0f0;
+    --generator-text-color2: #54d400;
+    --last-bg-color: #ff3284;
+    --last-text-color: #fff;
+    --lastfew-text-color: #fff;
+    --lastfew-bg-color: #0000ff;
+    --lastfew-border-width: 3px;
+    --btn-text-color: #fff;
+    --num-bg-color: #fff;
+    --num-bg-opacity: 0.9;
+    --box-bg-opacity: 0.7;
+    --box-text-color: #24c5ff;
+    --countdown-base-stroke: #fff;
+    --countdown-progress-stroke: #19b7f1;
+    --countdown-pointer-stroke: #19b7f1;
+}
+
+.cf {
+    overflow: hidden;
+    width: 100%;
+}

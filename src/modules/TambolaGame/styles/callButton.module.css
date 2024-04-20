@@ -1,0 +1,13 @@
+.btn_generate {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    color: var(--btn-generate-text-color, var(--btn-text-color));
+    margin-top: 4px;
+    width: 150px;
+    font-size: 22px;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: var(--btn-generate-bg-color, var(--dark-bg-color2));
+    border: 1px solid var(--border-color);
+}

@@ -1,0 +1,11 @@
+.generator_container {
+    border: 0 solid #ccc;
+    display: block;
+    left: 20px;
+    top: 80px;
+    margin: 10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}

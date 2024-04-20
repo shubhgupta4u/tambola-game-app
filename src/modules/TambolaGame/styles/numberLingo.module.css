@@ -1,0 +1,20 @@
+.lingo {
+    color: var(--lingo-text-color, var(--generator-text-color));
+    background-color: var(--lingo-bg-color, var(--lite-bg-color));
+}
+
+.numberinfo {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding: 8px;
+    border-radius: 10px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--generator-text-color2);
+    background-color: var(--lite-bg-color);
+    border: 1px solid var(--border-color);
+}
