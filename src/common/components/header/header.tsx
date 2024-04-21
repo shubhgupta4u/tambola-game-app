@@ -12,10 +12,12 @@ export function Header() {
     const toggleMenu=()=>{
         setMenuOpen(!menuOpen);
     }
-
+    const closeMenu=()=>{
+        setMenuOpen(false);
+    }
 
     let links = [
-        { name: "Play Tambola Game", href: "/tambola", icon: faKeyboard },
+        { name: "Play Tambola Game", href: "/", icon: faKeyboard },
         { name: "Ticket Generator", href: "/ticket", icon: faTicket },
         { name: "How to play", href: "/rules", icon: faPersonCircleQuestion }
     ]
@@ -38,15 +40,15 @@ export function Header() {
                                 (
 
                                     (
-                                        pathname == link.href ?
+                                        pathname == link.href?
                                             (
-                                                <span key={link.href} className={`nav-link ${styles.headerLink}  ${styles.active}`}  onClick={()=>{toggleMenu()}}>
+                                                <span key={link.href} className={`nav-link ${styles.headerLink}  ${styles.active}`}  onClick={()=>{closeMenu()}}>
                                                     <FontAwesomeIcon icon={link.icon} />  {link.name}
                                                 </span>
                                             )
                                             :
                                             (
-                                                <li key={link.href} className={`nav-item ${styles.headerList}`}  onClick={()=>{toggleMenu()}}>
+                                                <li key={link.href} className={`nav-item ${styles.headerList}`}  onClick={()=>{closeMenu()}}>
                                                     <Link className={`nav-link ${styles.headerLink}`}
                                                         href={pathname == link.href ? "" : link.href}>
                                                         <FontAwesomeIcon icon={link.icon} />  {link.name}
