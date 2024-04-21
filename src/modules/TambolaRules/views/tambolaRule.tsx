@@ -24,7 +24,7 @@ export function TambolaRule() {
                             <p>Part 1</p>
                         </div>
                         <div className={styles.headline_info}>
-                            <h3>Organizing<span className={styles.headingPart2}>Tambola</span></h3>
+                            <h3>Organizing<span className={styles.headingPart2}> Tambola</span></h3>
                         </div>
                     </div>
                     <div className={`col-6 ${styles.section_title}`}>
@@ -32,7 +32,7 @@ export function TambolaRule() {
                             <p><a onClick={() => { onSectionChange(2) }}>Part 2</a></p>
                         </div>
                         <div className={styles.headline_info}>
-                            <h3>Playing<span className={styles.headingPart2}>the Game</span></h3>
+                            <h3>Playing<span className={styles.headingPart2}> the Game</span></h3>
                         </div>
 
                     </div>
