@@ -16,6 +16,8 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Deployed Sandbox Environment
+## Deployed Sandbox Environments
 
-Check out our [running sandbox application](https://tambola-game-2aybw2y0p-shubhgupta4us-projects.vercel.app/) to see the result.
+Check out our [running public sandbox application](https://tambola-in.web.app/tambola) to see the result.
+ 
+And our [running private sandbox application](https://tambola-game-2aybw2y0p-shubhgupta4us-projects.vercel.app/) to conduct our testing before release it on public sandbox environment.
