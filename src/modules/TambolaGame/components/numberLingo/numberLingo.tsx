@@ -1,4 +1,4 @@
-import styles from "@/modules/TambolaGame/styles/numberLingo.module.css"
+import styles from "@/modules/TambolaGame/components/numberLingo/numberLingo.module.css"
 
 export function NumberLingo({ numberLingo }: { numberLingo: string }) {
 

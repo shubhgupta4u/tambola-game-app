@@ -1,5 +1,11 @@
-.board_number {
-    width: 9%;
+.recentContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+.number {
+    width: 15%;
     height: 8vh;
     line-height: 8vh;
     margin: 2px;
@@ -12,24 +18,11 @@
     color: var(--num-color);
     text-shadow: var(--num-gen-text-shadow, 0px 0px #ff0000);
     opacity: var(--num-bg-opacity, 1);
+    min-width: 55px;
+    min-height: 35px;
 }
-.number {
-    font-size: 60px;
-    text-align: center;
-    font-weight: 700;
-    margin-top: 20px;
-    display: inline-block;
-    padding: 4px;
-    border-radius: 10px;
-    min-width: 150px;
-    color: var(--generator-text-color2);
-    background-color: var(--called-bg-color, var(--lite-bg-color));
-    border: 1px solid var(--border-color);
-}
-.pending {
 
-}
-.generated {
+.previous_number {
     font-weight: 700;
     border-color: var(--border-color);
     color: var(--num-gen-color);

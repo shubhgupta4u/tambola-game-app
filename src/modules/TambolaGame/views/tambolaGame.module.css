@@ -2,6 +2,7 @@
     display: flex;
 }
 .tng_container {
+    margin: auto;
     --border-color: #ccc;
     --dark-border-color: #ff1a75;
     --text-color: #24c5ff;
@@ -21,6 +22,7 @@
     --counter-bg-color: #f4fbfe;
     --generator-text-color: #00b0f0;
     --generator-text-color2: #54d400;
+    --dark-bg-disabled-color:#cbf2b2;
     --last-bg-color: #ff3284;
     --last-text-color: #fff;
     --lastfew-text-color: #fff;
@@ -39,4 +41,25 @@
 .cf {
     overflow: hidden;
     width: 100%;
+    display: flex;
+    max-width: 1400px;
+    min-width: 340px;
+}
+.callerContainer{
+    width: 25%;
+}
+.boardContainer{
+    width: 75%;
+}
+
+
+
+/* For Tablets */
+@media screen and (max-width: 768px) {
+    .cf {
+        flex-direction: column;
+    }
+    .callerContainer,.boardContainer{
+        width: 100%;        
+    }
 }

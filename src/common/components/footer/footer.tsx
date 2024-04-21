@@ -1,11 +1,11 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookF,faTwitter , faGoogle, faInstagram,faLinkedinIn,faGithub} from '@fortawesome/free-brands-svg-icons'
-
+import styles  from "@/common/components/footer/footer.module.css";
 
 export function Footer() {
 
     return (
-        <div className="footer">
+        <div className={styles.footer}>
         
           <footer className="bg-dark text-center text-white">
      
@@ -35,7 +35,7 @@ export function Footer() {
           </div>       
        
           <div className="text-center p-3" style={{backgroundColor:"rgba(0, 0, 0, 0.2)"}} >
-            © 2024 Copyright: {"\u00A0"} Shubh Gupta
+            © 2024 Copyright: Shubh Gupta
           </div>
          
         </footer>

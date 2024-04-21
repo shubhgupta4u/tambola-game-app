@@ -1,4 +1,4 @@
-import styles from "@/modules/TambolaGame/styles/num.module.css"
+import styles from "@/modules/TambolaGame/components/number/num.module.css"
 import { RootState } from "@/store/store";
 import { useSelector } from "react-redux";
 

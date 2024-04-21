@@ -1,5 +1,5 @@
 export class NumberLingoProvider{
-    lingoMessage: Array<string> = [
+    private static lingoMessage: Array<string> = [
         "Lone ranger",
         "Kaala dhan",
         "Happy family",
@@ -93,7 +93,7 @@ export class NumberLingoProvider{
     ];
     
     
-    getMessage(num:number):string{
-        return this.lingoMessage[num-1];
+    static getMessage(num:number):string{
+        return NumberLingoProvider.lingoMessage[num-1];
     }
 }

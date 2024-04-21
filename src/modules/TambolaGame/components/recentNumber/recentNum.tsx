@@ -1,4 +1,4 @@
-import styles from "@/modules/TambolaGame/styles/recentNum.module.css"
+import styles from "@/modules/TambolaGame/components/recentNumber/recentNum.module.css"
 import { RootState } from "@/store/store";
 import { useSelector } from "react-redux";
 
@@ -9,7 +9,7 @@ export function RecentCalledNumber() {
     let slicedArray = [];
 
     return (
-        <div>
+        <div className={styles.recentContainer}>
             {
                 prevCalledNumbers.slice(-6).reverse().map((n,i) => (
                     (i>0)?(

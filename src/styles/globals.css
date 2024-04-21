@@ -1,4 +1,14 @@
-@tailwind base;
+
+.show {
+  position: absolute;
+  background: #1b1e21;
+  top: 35px;
+  right: 0;
+  z-index: 100;
+  padding: 12px;
+}
+
+/* @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -43,4 +53,4 @@ body {
   .col-3 {
       width: 25%;
   }
-}
+} */

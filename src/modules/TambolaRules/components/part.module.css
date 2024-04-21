@@ -1,0 +1,19 @@
+.section_text{
+    display: flex;
+    background-color: inherit;
+    padding: 10px;
+    border: none;
+}
+.step_num {
+    font-size: 30px;
+    color: #545454;
+    padding: 0 15px 0 0;
+    float: left;
+    font-weight: bold;
+    line-height: 39px;
+}
+.step_ul{
+    margin-left: 55px;
+    margin-top: 5px;
+    padding: 0;
+}

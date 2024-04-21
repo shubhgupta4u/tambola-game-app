@@ -1,0 +1,22 @@
+.generator_container {
+    border: 0 solid #ccc;
+    display: block;
+    margin: 10px 10px;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* For Tablets */
+@media screen and (max-width: 768px) {
+    .generator_container {
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .caller_container{
+        width: 50%;
+        padding: 10px;
+    }
+}

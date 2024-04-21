@@ -13,7 +13,12 @@ const CalledNumbersSlice = createSlice({
     initialState,
     reducers: {
         pushNextCalledNumber: (state, action: PayloadAction<number>) => {
-            state.values.push(action.payload);
+            if(state.values.indexOf(action.payload)==-1){
+                state.values.push(action.payload);
+            }else{
+                console.error(state.values +" is already called previously");
+            }
+            
         }
     }
 });

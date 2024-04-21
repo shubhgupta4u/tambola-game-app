@@ -1,17 +1,13 @@
+import { NumberUtility } from "@/common/utils/number-util";
+
 export class NumberGenerator{
-    boardNums: Array<number> = [];
+    private static boardNums: Array<number> = NumberUtility.getBoardNumbers();
     
-    constructor(){
-        for (var i = 1; i <= 90; i++) {
-            this.boardNums.push(i);
-        }
-    }
-    
-    getRandom():number{
-        const randomIndex = Math.floor(Math.random() * this.boardNums.length);
-        const num=this.boardNums[randomIndex];
-        this.boardNums.splice(randomIndex, 1)
-        console.log(num);
+   
+    static getRandom():number{
+        const randomIndex =NumberUtility.getRandomNumber(1,this.boardNums.length)-1;
+        const num=NumberGenerator.boardNums[randomIndex];
+        NumberGenerator.boardNums.splice(randomIndex, 1)
         return num;
     }
 }

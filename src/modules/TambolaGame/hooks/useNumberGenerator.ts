@@ -8,17 +8,14 @@ import { NumberLingoProvider } from "../services/number-lingo-provider";
 export default function useNumberGenerator() {
     const [randomNumber, setRandomNumber] = useState<number>();
     const [message, setMessage] = useState<string>();
-
-    const numberGenerator: NumberGenerator = new NumberGenerator();
-    const numberLingoProvider: NumberLingoProvider = new NumberLingoProvider();
-
+    
     const prevCalledNumbers = useSelector((state: RootState) => state.calledNumberReducer.values);
     const dispatch = useDispatch();
 
     function callNextNumber() {
-        let randomNumber = numberGenerator.getRandom();
+        let randomNumber = NumberGenerator.getRandom();
         setRandomNumber(randomNumber);
-        setMessage(numberLingoProvider.getMessage(randomNumber));
+        setMessage(NumberLingoProvider.getMessage(randomNumber));
         dispatch(pushNextCalledNumber(randomNumber));
     }
 
