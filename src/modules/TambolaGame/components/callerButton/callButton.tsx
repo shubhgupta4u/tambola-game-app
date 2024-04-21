@@ -20,7 +20,7 @@ export function CallerButton({callNext,audioPlaying}:{callNext:Function,audioPla
         <>
             <div >
                 <input id="generate" type="button" disabled={audioPlaying || prevCalledNumbers.length == 90 ?true:false}
-                    value="Call Next" className={`${styles.btn_generate} ${audioPlaying|| prevCalledNumbers.length == 90 ? styles.disabled:""}`}
+                    value={prevCalledNumbers.length == 90 ?"The End":"Call Next"} className={`${styles.btn_generate} ${audioPlaying|| prevCalledNumbers.length == 90 ? styles.disabled:""}`}
                     onClick={() => onCallNext()} />
             </div>
         </>

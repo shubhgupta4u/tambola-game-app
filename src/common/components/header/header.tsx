@@ -40,13 +40,13 @@ export function Header() {
                                     (
                                         pathname == link.href ?
                                             (
-                                                <span key={link.href} className={`nav-link ${styles.headerLink}  ${styles.active}`}>
+                                                <span key={link.href} className={`nav-link ${styles.headerLink}  ${styles.active}`}  onClick={()=>{toggleMenu()}}>
                                                     <FontAwesomeIcon icon={link.icon} />  {link.name}
                                                 </span>
                                             )
                                             :
                                             (
-                                                <li key={link.href} className={`nav-item ${styles.headerList}`}>
+                                                <li key={link.href} className={`nav-item ${styles.headerList}`}  onClick={()=>{toggleMenu()}}>
                                                     <Link className={`nav-link ${styles.headerLink}`}
                                                         href={pathname == link.href ? "" : link.href}>
                                                         <FontAwesomeIcon icon={link.icon} />  {link.name}
