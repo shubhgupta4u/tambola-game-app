@@ -1,6 +1,7 @@
 
 import { act, fireEvent, render, screen } from "@/common/utils/test-util"
-import { CallerButton } from "./callButton";
+import { CallerButton } from "@/modules/TambolaGame/components/callerButton/callButton";
+
 
 let audioPlaying=false;
 const mockCallNext = jest.fn(() => {

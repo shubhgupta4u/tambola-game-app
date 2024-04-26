@@ -1,10 +1,10 @@
 import { render, screen } from "@/common/utils/test-util"
-import { Num } from "../number/num";
 import { numberElementType } from "@/common/constants/numberElementType";
-import { TambolaCaller } from "./tambola-caller";
-import { CallerButton } from "../callerButton/callButton";
-import { RecentCalledNumber } from "../recentNumber/recentNum";
-import { NumberLingo } from "../numberLingo/numberLingo";
+import { TambolaCaller } from "@/modules/TambolaGame/components/tambolaCaller/tambola-caller";
+import { CallerButton } from "@/modules/TambolaGame/components/callerButton/callButton";
+import { Num } from "@/modules/TambolaGame/components/number/num";
+import { NumberLingo } from "@/modules/TambolaGame/components/numberLingo/numberLingo";
+import { RecentCalledNumber } from "@/modules/TambolaGame/components/recentNumber/recentNum";
 
 const num = 14;
 const msg = "Valentine Day";
@@ -12,22 +12,22 @@ const mockCallNext = jest.fn(() => {
 
 });
 
-jest.mock('../callerButton/callButton', () => ({
+jest.mock('../../../../../src/modules/TambolaGame/components/callerButton/callButton', () => ({
     CallerButton: jest.fn().mockImplementation(({ children }) => {
         return <div data-testid="CallerButton">children</div>
     })
 }));
-jest.mock('../number/num', () => ({
+jest.mock('../../../../../src/modules/TambolaGame/components/number/num', () => ({
     Num: jest.fn().mockImplementation(({ children }) => {
         return <div data-testid="Num">children</div>
     })
 }));
-jest.mock('../numberLingo/numberLingo', () => ({
+jest.mock('../../../../../src/modules/TambolaGame/components/numberLingo/numberLingo', () => ({
     NumberLingo: jest.fn().mockImplementation(({ children }) => {
         return <div data-testid="NumberLingo">children</div>
     })
 }));
-jest.mock('../recentNumber/recentNum', () => ({
+jest.mock('../../../../../src/modules/TambolaGame/components/recentNumber/recentNum', () => ({
     RecentCalledNumber: jest.fn().mockImplementation(({ children }) => {
         return <div data-testid="RecentCalledNumber">children</div>
     })
@@ -124,10 +124,5 @@ describe("TambolaCaller component",()=>{
         });
     
     });
-
-    // describe("should handle onCallNext()", () => {
-    //     const wrapper = render(<TambolaCaller callNext={mockCallNext} nextNumber={num} message={msg} />);
-    //     expect(wrapper.div().checkBoxChecked()).equals(true); //error appears here
-    // });
 
 });

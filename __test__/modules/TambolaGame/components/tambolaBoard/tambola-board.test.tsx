@@ -1,10 +1,10 @@
 import {render,screen} from "@/common/utils/test-util"
-import { TambolaBoard } from "./tambola-board";
-import { Num } from "../number/num";
 import { numberElementType } from "@/common/constants/numberElementType";
+import { TambolaBoard } from "@/modules/TambolaGame/components/tambolaBoard/tambola-board";
+import { Num } from "@/modules/TambolaGame/components/number/num";
 
 
-jest.mock('../number/num', () => ({
+jest.mock('../../../../../src/modules/TambolaGame/components/number/num', () => ({
                 Num: jest.fn().mockImplementation(({ children }) => {
                     return <div data-testid="Num">children</div>
                 })

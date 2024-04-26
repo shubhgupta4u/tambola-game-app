@@ -1,14 +1,14 @@
-import { TambolaBoard } from "../components/tambolaBoard/tambola-board";
-import { TambolaCaller } from "../components/tambolaCaller/tambola-caller";
-import {TambolaGame} from "./tambolaGame";
 import {render, screen} from "@/common/utils/test-util"
+import { TambolaBoard } from "@/modules/TambolaGame/components/tambolaBoard/tambola-board";
+import { TambolaCaller } from "@/modules/TambolaGame/components/tambolaCaller/tambola-caller";
+import { TambolaGame } from "@/modules/TambolaGame/views/tambolaGame";
 
-jest.mock('../components/tambolaCaller/tambola-caller', () => ({
+jest.mock('../../../../src/modules/TambolaGame/components/tambolaCaller/tambola-caller', () => ({
     TambolaCaller: jest.fn().mockImplementation(({ children }) => {
         return <div data-testid="TambolaCaller">children</div>
       })
 }));
-jest.mock('../components/tambolaBoard/tambola-board', () => ({ 
+jest.mock('../../../../src/modules/TambolaGame/components/tambolaBoard/tambola-board', () => ({ 
       TambolaBoard: jest.fn().mockImplementation(({ children }) => {
         return <div data-testid="TambolaBoard">children</div>
       })

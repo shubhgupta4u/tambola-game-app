@@ -1,4 +1,4 @@
-import CalledNumbersSlice, { pushNextCalledNumber } from './calledNumberSlice';
+import CalledNumbersSlice, { pushNextCalledNumber } from '@/common/state/calledNumberSlice';
 
 import expect from 'expect';
 

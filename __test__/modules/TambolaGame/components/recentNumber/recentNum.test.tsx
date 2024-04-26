@@ -1,5 +1,6 @@
 import {render} from "@/common/utils/test-util"
-import { RecentCalledNumber } from "./recentNum";
+import { RecentCalledNumber } from "@/modules/TambolaGame/components/recentNumber/recentNum";
+
 
 describe("RecentCalledNumber component",()=>{
 

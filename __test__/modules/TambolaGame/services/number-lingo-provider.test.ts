@@ -1,4 +1,5 @@
-import { NumberLingoProvider } from "./number-lingo-provider";
+import { NumberLingoProvider } from "@/modules/TambolaGame/services/number-lingo-provider";
+
 
 
 describe("NumberLingoProvider service",()=>{

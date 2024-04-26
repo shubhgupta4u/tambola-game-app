@@ -1,6 +1,6 @@
 
-import useNumberGenerator from "./useNumberGenerator";
 import { act, renderHook } from "@/common/utils/test-util";
+import useNumberGenerator from "@/modules/TambolaGame/hooks/useNumberGenerator";
 
 describe("useNumberGenerator hook", () => {
     

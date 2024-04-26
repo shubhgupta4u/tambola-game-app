@@ -1,6 +1,7 @@
 
 import { render, screen } from "@/common/utils/test-util"
-import { NumberLingo } from "./numberLingo";
+import { NumberLingo } from "@/modules/TambolaGame/components/numberLingo/numberLingo";
+
 
 describe("NumberLingo component",()=>{
 

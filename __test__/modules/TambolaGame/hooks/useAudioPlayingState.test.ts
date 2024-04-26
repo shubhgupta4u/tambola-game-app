@@ -1,6 +1,7 @@
 
 import { act, renderHook, waitFor } from "@/common/utils/test-util";
-import useAudioPlayingState from "./useAudioPlayingState";
+import useAudioPlayingState from "@/modules/TambolaGame/hooks/useAudioPlayingState";
+
 
 describe("useAudioPlayingState hook", () => {
     

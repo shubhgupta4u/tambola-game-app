@@ -1,4 +1,5 @@
-import { NumberGenerator } from "./number-generator";
+import { NumberGenerator } from "@/modules/TambolaGame/services/number-generator";
+
 
 describe("NumberGenerator service",()=>{
 

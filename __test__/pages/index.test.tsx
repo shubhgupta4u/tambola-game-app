@@ -1,9 +1,9 @@
 import React from "react";
-import Tambola from "./index";
 import {render,screen} from "@/common/utils/test-util";
+import Tambola from "@/pages";
 
 
-jest.mock('../modules/TambolaGame/views/tambolaGame', () => ({
+jest.mock('../../src/modules/TambolaGame/views/tambolaGame', () => ({
     TambolaGame: jest.fn().mockImplementation(({ children }) => {
         return <div data-testid="TambolaGame">children</div>
       })

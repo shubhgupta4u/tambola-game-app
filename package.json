@@ -8,9 +8,9 @@
     "start": "next start",
     "lint": "next lint",
     "export": "next export",
-    "test":"jest",
-    "test:watch":"jest --watchAll",
-    "test:coverage":"jest --coverage"
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "test:coverage": "jest --coverage"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.2",

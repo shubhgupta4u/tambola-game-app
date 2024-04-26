@@ -1,7 +1,7 @@
 
 import { render, screen } from "@/common/utils/test-util"
-import { Num } from "./num";
 import { numberElementType } from "@/common/constants/numberElementType";
+import { Num } from "@/modules/TambolaGame/components/number/num";
 
 describe("Num component",()=>{
 
