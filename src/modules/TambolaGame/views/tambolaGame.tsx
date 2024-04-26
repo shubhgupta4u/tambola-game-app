@@ -19,10 +19,10 @@ export function TambolaGame() {
             <div className={styles.tng_container}>
                 <div className={`${styles.cf}`}>
                     <div className={styles.callerContainer}>
-                        <TambolaCaller callNext={generateRandomNumber} nextNumber={randomNumber} message={message === undefined ? "" : message} />
+                        <TambolaCaller data-testid="TambolaCaller" callNext={generateRandomNumber} nextNumber={randomNumber} message={message === undefined ? "" : message} />
                     </div>
                     <div className={styles.boardContainer}>
-                        <TambolaBoard nextNumber={randomNumber} />
+                        <TambolaBoard data-testid="TambolaBoard" />
                     </div>
 
                 </div>

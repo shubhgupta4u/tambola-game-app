@@ -35,3 +35,10 @@
     text-decoration: var(--num-gen-text-decoration, none);
     background-color: var(--num-gen-bg-color2);
 }
+
+.last {
+    border-color: var(--border-color);
+    border-width: var(--last-border-width, 1px);
+    color: var(--last-text-color);
+    background-color: var(--lingo-text-color);
+}

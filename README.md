@@ -2,15 +2,51 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+
+### 1. Install npm dependencies packages
+```bash
+
+npm install
+
+```
+
+### 2. Build React Next.js project code
 
 ```bash
-npm install
-npm run build
+
+npm run build 
+
+```
+
+### 3. Start React Next.js project code
+
+```bash
+
 npm run dev
+
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+
+### 4. Run NPM test
+
+```bash
+
+npm test
+
+```
+
+### 5. Run NPM test with coverage
+
+```bash
+
+npm run test:coverage
+
+```
+
+Open [/coverage/index.html](/coverage/index.html) to see the coverage result on browser.
+
 
 ## Deployed Sandbox Environments
 

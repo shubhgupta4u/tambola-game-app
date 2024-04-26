@@ -3,10 +3,8 @@ import "@/styles/globals.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import type { AppProps } from "next/app";
 import { Provider } from "react-redux";
-
 import { Inter } from "next/font/google";
 import { Header } from "@/common/components/header/header";
-import Script from "next/script";
 import { Footer } from "@/common/components/footer/footer";
 
 const inter = Inter({ subsets: ["latin"] });

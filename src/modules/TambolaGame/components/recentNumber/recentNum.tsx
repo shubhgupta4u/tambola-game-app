@@ -1,8 +1,6 @@
 import styles from "@/modules/TambolaGame/components/recentNumber/recentNum.module.css"
 import { RootState } from "@/store/store";
-import { useEffect } from "react";
 import { useSelector } from "react-redux";
-
 
 export function RecentCalledNumber() {
 

@@ -1,9 +1,9 @@
-import { Num } from "../number/num";
+import { Num } from "@/modules/TambolaGame/components/number/num";
 import styles from "@/modules/TambolaGame/components/tambolaBoard/board.module.css"
-import numStyles from "@/modules/TambolaGame/components/number/num.module.css"
 import { NumberUtility } from "@/common/utils/number-util";
+import { numberElementType } from "@/common/constants/numberElementType";
 
-export function TambolaBoard({nextNumber}:{nextNumber:number|undefined}) {
+export function TambolaBoard() {
     let boardNums: Array<number> = NumberUtility.getBoardNumbers();
     
     return (
@@ -11,7 +11,7 @@ export function TambolaBoard({nextNumber}:{nextNumber:number|undefined}) {
         
             {
                 boardNums.map(n => (
-                    <Num key={n} num={n} nextNumber={nextNumber}  className={numStyles.board_number}/>
+                    <Num key={n} num={n} elementType={numberElementType.BoardNumber} />
                 ))
             }
             
