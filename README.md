@@ -48,8 +48,10 @@ npm run test:coverage
 Open [/coverage/index.html](/coverage/index.html) to see the coverage result on browser.
 
 
-## Deployed Sandbox Environments
+## Deployed Environments
 
-Check out our [running public sandbox application](https://tambola-in.web.app) to see the result.
+### Production Environment
+Check out our [running public production application](https://tambola.online) to see the result.
  
+### Development Environment
 And our [running private sandbox application](https://tambola-game-2aybw2y0p-shubhgupta4us-projects.vercel.app/) to conduct our testing before release it on public sandbox environment.
