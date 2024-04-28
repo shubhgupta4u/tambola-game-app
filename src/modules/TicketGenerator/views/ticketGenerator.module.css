@@ -10,3 +10,163 @@
         padding: 10px;
     }
 }
+.container {
+    --theme-color-1: #f9f9f9;
+    --theme-color-2: #e0e0e0;
+    --theme-color-3: #24c5ff;
+    --theme-color-4: #27cba4;
+    --theme-color-5: #505050;
+    --theme-color-6: #ffcbc4;
+    --theme-color-7: #b0b0b0;
+    --theme-color-8: #f0f0f0;
+    --theme-color-9: #fcfcfc;
+    --theme-color-10: #f13361;
+    --theme-color-11: #009ed8;
+    --theme-color-12: #f35efd;
+    --main-text-color: #333;
+    --lvl2-heading-color: #ff0066;
+    --lvl2-text-color: #ff3385;
+    --lvl2-link-color: #00b0f0;
+    --lvl2-form-field-color: #ff3385;
+    --lvl2-form-field-color2: #00b0f0;
+    --lvl2-bg-color: #ff3284;
+    --lvl2-bg-color2: #ff7fb2;
+    --lvl2-bg-color3: #ffcce0;
+    --lvl2-bg-color4: #ffe7f0;
+    --lvl2-border-color: #ff1a75;
+    --lvl2-border-color2: #ff67a3;
+    --lvl2-border-color3: #ffd5d5;
+    --lvl1-signal-color1: #d6f2fc;
+    --lvl1-signal-color2: #e0f9e0;
+    --lvl1-signal-color3: #ffcccc;
+    --lvl1-signal-color4: #ffffb2;
+    --lvl1-heading-color: #00b0f0;
+    --lvl1-heading-hover-color: var(--theme-color-5);
+    --lvl1-text-color: #24c5ff;
+    --lvl1-link-color: #009ed8;
+    --lvl1-bg-color: #32bff3;
+    --lvl1-bg-color2: #7fd7f7;
+    --lvl1-bg-color3: #e5f7fd;
+    --lvl1-bg-color4: #f2fafd;
+    --lvl1-bg-color5: #f8f8f8;
+    --lvl1-border-color: #19b7f1;
+    --lvl1-border-color2: #8cdbf8;
+    --lvl1-border-color3: #d1f0fc;
+    --lvl1-sel-color: var(--theme-color-3);
+    --lvl3-heading-color: #ff8000;
+    --lvl3-text-color: #ff9933;
+    --lvl3-bg-color: #ff8000;
+    --lvl3-bg-color2: #ffb266;
+    --lvl3-bg-color3: #ffd8b2;
+    --lvl3-border-color: #ff8000;
+    --lvl4-heading-color: #00EE00;
+    --lvl4-text-color: #00EE00;
+    --lvl4-border-color: #9ad900;
+    --lvl4-bg-color: #ff8c19;
+    --lvl4-bg-color2: #ff93ac;
+    --lvl4-bg-color3: #ffe0e6;
+    --lvl4-bg-color4: #fefeb3;
+    --lvl4-bg-color5: #fefeb3;
+    --lvl4-bg-color6: #FFF2CC;
+    --lvl5-text-color: #888888;
+    --lvl5-bg-color: #f8f8f8;
+    --lvl5-border-color: #cccccc;
+    --lvl0-color: #32bff3;
+    --lvl0-alt-color: #fff;
+    --lvl0-alt2-color: #fff;
+    --border-color: #ccc;
+    --dark-border-color: #ff1a75;
+    --text-color: #24c5ff;
+    --text-heading-color: #00b0f0;
+    --num-color: #ccc;
+    --num-gen-color: #fff;
+    --num-gen-bg-color2: #54d400;
+    --num-gen-bg-color: #32bff3;
+    --num-gen-text-shadow: 0px 0px #000;
+    --dark-bg-color2: #54d400;
+    --dark-bg-color: #32bff3;
+    --mid-bg-color: #7fd7f7;
+    --lite-bg-color: #f4fbfe;
+    --lingo-text-color: #00b0f0;
+    --lingo-bg-color: #f4fbfe;
+    --counter-text-color: #00b0f0;
+    --counter-bg-color: #f4fbfe;
+    --generator-text-color: #00b0f0;
+    --generator-text-color2: #54d400;
+    --dark-bg-disabled-color:#cbf2b2;
+    --last-bg-color: #ff3284;
+    --last-text-color: #fff;
+    --lastfew-text-color: #fff;
+    --lastfew-bg-color: #0000ff;
+    --lastfew-border-width: 3px;
+    --btn-text-color: #fff;
+    --num-bg-color: #fff;
+    --num-bg-opacity: 0.9;
+    --box-bg-opacity: 0.7;
+    --box-text-color: #24c5ff;
+    --countdown-base-stroke: #fff;
+    --countdown-progress-stroke: #19b7f1;
+    --countdown-pointer-stroke: #19b7f1;
+}
+.container_inner{
+    display: flex;
+    margin: 10px;
+}
+.ticket_setting, .ticket_template {
+    width: 50%;
+    max-width: 50%;
+}
+
+/* For Tablets */
+@media screen and (max-width: 768px) {
+    .container_inner{
+        flex-direction: column;
+    }
+    .ticket_setting, .ticket_template {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+.btn_generate {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    color: var(--btn-generate-text-color, var(--btn-text-color));
+    margin-top: 4px;
+    width: 150px;
+    font-size: 22px;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: var(--btn-generate-bg-color, var(--dark-bg-color2));
+    border: 1px solid var(--border-color);
+}
+.label{
+   color: var(--generator-text-color2);
+   font-weight: bolder;
+}
+.ticket_template{    
+    margin: 16px auto;
+}
+.fl {
+    float: left;
+}
+.cl {
+    clear: left;
+}
+.field {
+    border-radius: 16px;
+    box-shadow: inset 2px 2px 2px 2px #cbced1, inset -2px -2px 2px 2px #fff;
+    height: 32px;
+    padding-left: 8px;
+    display: inline-block;
+}
+.field .input {
+    border: none;
+    outline: none;
+    background: 0 0;
+    padding: 8px;
+    display: inline-block;
+    font-size: 100%;
+    width: 100%;
+    color: var(--main-text-color);
+}

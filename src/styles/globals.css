@@ -7,6 +7,22 @@
   z-index: 100;
   padding: 12px;
 }
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* .print-container * {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+} */
 
 /* @tailwind base;
 @tailwind components;

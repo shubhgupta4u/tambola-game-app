@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { NumberGenerator } from "../services/number-generator";
+import { BoardNumberGenerator } from "../services/board-number-generator";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "@/store/store";
 import { pushNextCalledNumber } from "@/common/state/calledNumberSlice";
@@ -13,7 +13,7 @@ export default function useNumberGenerator() {
     const dispatch = useDispatch();
 
     function callNextNumber() {
-        let randomNumber = NumberGenerator.getRandom();
+        let randomNumber = BoardNumberGenerator.getRandom();
         setRandomNumber(randomNumber);
         setMessage(NumberLingoProvider.getMessage(randomNumber));
         dispatch(pushNextCalledNumber(randomNumber));

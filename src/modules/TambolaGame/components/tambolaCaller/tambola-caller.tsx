@@ -14,7 +14,7 @@ export function TambolaCaller({callNext,nextNumber,message}:{callNext:Function,n
         setPlayingAudio(true);
         setTimeout(()=>{
             callNext();
-        },5000);
+        },3000);
     }
 
     return (

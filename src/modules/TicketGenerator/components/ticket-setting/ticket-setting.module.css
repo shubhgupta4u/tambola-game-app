@@ -1,0 +1,73 @@
+.legend{
+        padding-inline-start: 2px;
+        padding-inline-end: 2px;
+        width: auto;
+        display: inherit;
+        float: none;
+   
+}
+.label{
+    padding: 0 15px;
+}
+.form_short {
+    width: 90%;
+    margin: 16px auto;
+    padding: 8px;
+    border-radius: 16px;
+    background: var(--lvl1-signal-color2);
+    box-shadow: 4px 4px 4px #cbced1, -4px -4px 4px #fff;
+    color: var( --generator-text-color2);
+    overflow: auto;
+}
+.form_short .field {
+    margin: 8px 4px;
+    border-radius: 16px;
+    box-shadow: inset 4px 4px 4px #cbced1, inset -4px -4px 4px #fff;
+    height: 32px;
+    padding-left: 8px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.fl {
+    float: left;
+}
+.cl {
+    clear: left;
+}
+.form_short .fieldset {
+    color: var(--generator-text-color2);
+    border: 1px solid var(--generator-text-color2);
+    padding: 4px;
+    margin-bottom: 16px;
+}
+
+.fieldset {
+    display: flex;
+    flex-direction: column;
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    padding-block-start: 0.35em;
+    padding-inline-start: 0.75em;
+    padding-inline-end: 0.75em;
+    padding-block-end: 0.625em;
+    min-inline-size: min-content;
+    border-width: 2px;
+    border-style: groove;
+    border-color: rgb(192, 192, 192);
+    border-image: initial;
+}
+
+.form_short .field .input, .form-short .field .select, .form_short .field .textarea {
+    border: none;
+    outline: none;
+    background: 0 0;
+    padding: 8px;
+    display: inline-block;
+}
+
+.input, .textarea {
+    font-size: 100%;
+    width: 100%;
+    color: var(--main-text-color);
+}

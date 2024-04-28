@@ -44,12 +44,12 @@ describe("useAudioPlayingState hook", () => {
         //Assert
         result.current.setPlayingAudio(true);
         
-        await new Promise((r) => setTimeout(r, 5000));
+        await new Promise((r) => setTimeout(r, 3000));
 
         expect(result.current.audioPlaying).toBeFalsy();
 
    
-    },6000);
+    },5000);
 
     it("should assign false to audioPlaying on setPlayingAudio(false) function call", async () => {
         //Arrange

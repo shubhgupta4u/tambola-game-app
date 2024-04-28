@@ -15,7 +15,7 @@ export default function useAudioPlayingState() {
             setTimeout(()=>{
                 clearInterval(timer);
                 setAudioPlaying(false);
-            },4800);
+            },2800);
         }
         setAudioPlaying(state);
 

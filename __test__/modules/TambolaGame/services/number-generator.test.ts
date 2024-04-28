@@ -1,4 +1,4 @@
-import { NumberGenerator } from "@/modules/TambolaGame/services/number-generator";
+import { BoardNumberGenerator } from "@/modules/TambolaGame/services/board-number-generator";
 
 
 describe("NumberGenerator service",()=>{
@@ -6,12 +6,12 @@ describe("NumberGenerator service",()=>{
     describe("getRandom function",()=>{
         it("should return unique random number between 1 to 90 in 90 function calls then undefined",()=>{
             //Arrange        
-            NumberGenerator.reset();
+            BoardNumberGenerator.reset();
             let numbers:Array<number>=[];
     
             for (let i = 1; i <= 90; i++) {
                 //Act
-                let n = NumberGenerator.getRandom();
+                let n = BoardNumberGenerator.getRandom();
               
     
                 //Assert
@@ -22,7 +22,7 @@ describe("NumberGenerator service",()=>{
                 numbers.push(n);
             }
     
-            let n = NumberGenerator.getRandom();
+            let n = BoardNumberGenerator.getRandom();
             expect(n).toBeUndefined();
     
         });
@@ -32,10 +32,10 @@ describe("NumberGenerator service",()=>{
     describe("reset function",()=>{
         it("should return unique random number between 1 to 90 in 90 function calls then undefined",()=>{
             //Arrange        
-            NumberGenerator.reset();
+            BoardNumberGenerator.reset();
             
             //Act
-            let n = NumberGenerator.getRandom();
+            let n = BoardNumberGenerator.getRandom();
               
     
             //Assert
