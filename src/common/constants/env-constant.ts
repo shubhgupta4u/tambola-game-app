@@ -1,3 +1,3 @@
 export class Constants{
-    static DomainName="TAMBOLA.IN"
+    static DomainName="TAMBOLA.ONLINE"
 }
