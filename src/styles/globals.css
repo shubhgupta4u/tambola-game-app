@@ -18,7 +18,13 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
-
+body {
+  min-width: 375px;
+}
+.row{
+  --bs-gutter-x: 0 !important;
+  --bs-gutter-y: 0 !important;
+}
 /* .print-container * {
   box-sizing: border-box;
   -moz-box-sizing: border-box;

@@ -42,3 +42,9 @@
     color: var(--last-text-color);
     background-color: var(--lingo-text-color);
 }
+@media screen and (max-width: 393px) {
+    .number {
+        min-width: 100px;
+        font-size: 40px;
+    }
+}

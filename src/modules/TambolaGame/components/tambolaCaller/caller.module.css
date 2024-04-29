@@ -20,3 +20,8 @@
         padding: 10px;
     }
 }
+@media screen and (max-width: 393px) {
+    .caller_container {
+        width: auto; 
+    }
+}

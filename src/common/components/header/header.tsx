@@ -30,7 +30,7 @@ export function Header() {
 
                 <div className={`container ${styles.navbarContainer}`}>
                     <Link className={`navbar-brand ${styles.navbarBrandText}`} href="/">{domainName}</Link>
-                    <button className={`navbar-toggler ${styles.mlAuto}`} type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    <button id="MenuButton" className={`navbar-toggler ${styles.mlAuto}`} type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onClick={()=>{toggleMenu()}}>
                         <span className="navbar-toggler-icon"></span>
                     </button>

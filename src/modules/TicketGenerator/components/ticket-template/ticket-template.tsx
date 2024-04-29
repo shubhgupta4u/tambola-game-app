@@ -3,26 +3,38 @@ import { RandomTicketProvider } from "../../services/random-ticket-provider"
 import { Constants } from "@/common/constants/env-constant";
 
 
+
 export function TicketTemplateComponent(
     { hostName, playerName, footerMessage, idStart, code }
         :
-        { hostName: string | undefined, playerName: string | undefined, footerMessage: string | undefined, idStart: string | undefined, code: string | undefined }
+        { hostName: string | undefined, playerName: string | undefined, footerMessage: string | undefined, idStart: string | undefined, code: string | undefined}
 ) {
-    
-    const [ticketData,setTicketData]=useState<Array<Array<number>>>();
-    useEffect(()=>{
-            let ticketData = RandomTicketProvider.getData();
-            setTicketData(ticketData.numbers);
-       
-    },[])
+
+    const [ticketData, setTicketData] = useState<Array<Array<number>>>();
+    useEffect(() => {
+        let ticketData = RandomTicketProvider.getData();
+        setTicketData(ticketData.numbers);
+        if(window.innerWidth <= 375){
+            const element = document.getElementById("ticket-grid-0");
+            if(element)
+                element.style.padding="8px 0px 8px 0px";        
+        }    
+    }, [])
+
     const ticket_template_outer: any = {
         margin: "0px auto",
         padding: "8px",
         background: "rgba(255, 255, 255, 0.5)",
         maxWidth: "450px",
-        minWidth:"450px"
+        minWidth: "330px"
     }
-
+    const ticket_template_outer_small: any = {
+        margin: "0px auto",
+        padding: "8px 0 8px 0",
+        background: "rgba(255, 255, 255, 0.5)",
+        maxWidth: "450px",
+        minWidth: "330px"
+    }
     const ticket_template: any = {
         border: "5px groove #54d400",
         width: "100%",
@@ -30,12 +42,10 @@ export function TicketTemplateComponent(
         padding: "0px",
         borderCollapse: "collapse"
     }
-
     const header_footer: any = {
         width: "100%",
         textAlign: "center",
         margin: "0px",
-        // padding: "0px 10px",
         display: "flex",
         flexDirection: "row",      
     }
@@ -47,7 +57,7 @@ export function TicketTemplateComponent(
         textWrap: "nowrap",
         maxWidth: "42%",
         textAlign: "left",
-        marginLeft:"10px"
+        marginLeft: "10px"
     }
     const middle: any = {
         width: "100%",
@@ -56,8 +66,8 @@ export function TicketTemplateComponent(
         textOverflow: "ellipsis",
         textWrap: "nowrap",
         maxWidth: "16%",
-        textAlign: (playerName === "" && hostName == ""?"center":(hostName == ""?"right":"center")),
-        margin: (playerName === "" && hostName == ""?"auto":(hostName == ""?"0 10px 0 auto":"0 10px"))
+        textAlign: (playerName === "" && hostName == "" ? "center" : (hostName == "" ? "right" : "center")),
+        margin: (playerName === "" && hostName == "" ? "auto" : (hostName == "" ? "0 10px 0 auto" : "0 10px"))
     }
     const last: any = {
         width: "100%",
@@ -67,8 +77,8 @@ export function TicketTemplateComponent(
         textWrap: "nowrap",
         maxWidth: "42%",
         textAlign: "right",
-        marginLeft: (playerName === ""?"auto":"0"),
-        marginRight:"10px"
+        marginLeft: (playerName === "" ? "auto" : "0"),
+        marginRight: "10px"
     }
     const first_footer: any = {
         width: "100%",
@@ -77,8 +87,8 @@ export function TicketTemplateComponent(
         textOverflow: "ellipsis",
         textWrap: "nowrap",
         maxWidth: "42%",
-        textAlign: (code == "" && footerMessage == ""?"center":"left"),
-        margin: (code == "" && footerMessage == ""?"auto":"0 0 0 10px")
+        textAlign: (code == "" && footerMessage == "" ? "center" : "left"),
+        margin: (code == "" && footerMessage == "" ? "auto" : "0 0 0 10px")
     }
     const middle_footer: any = {
         width: "100%",
@@ -87,8 +97,8 @@ export function TicketTemplateComponent(
         textOverflow: "ellipsis",
         textWrap: "nowrap",
         maxWidth: "16%",
-        textAlign: (code !== "" && footerMessage === ""?"right":"center"),
-        margin: (code !== "" && footerMessage === ""?"0 10px 0 auto":"0 10px")
+        textAlign: (code !== "" && footerMessage === "" ? "right" : "center"),
+        margin: (code !== "" && footerMessage === "" ? "0 10px 0 auto" : "0 10px")
     }
     const last_footer: any = {
         width: "100%",
@@ -98,8 +108,8 @@ export function TicketTemplateComponent(
         textWrap: "nowrap",
         maxWidth: "42%",
         textAlign: "right",
-        marginLeft: (code === "" && footerMessage !== ""?"auto":"0"),
-        marginRight:"10px"
+        marginLeft: (code === "" && footerMessage !== "" ? "auto" : "0"),
+        marginRight: "10px"
     }
     const num_box: any = {
         border: "2px solid #54d400",
@@ -120,7 +130,7 @@ export function TicketTemplateComponent(
         borderCollapse: "collapse",
         border: "0 solid #54d400"
     }
-    const domainName=Constants.DomainName;
+    const domainName = Constants.DomainName;
     return (
         <>
             <div role="ticket-template-container">
@@ -151,7 +161,7 @@ export function TicketTemplateComponent(
                         <div style={header_footer}>
                             <div style={first_footer}>{domainName}</div>
                             <div hidden={code == ""} style={middle_footer}>{code ? code : "<Code>"}</div>
-                            <div hidden={footerMessage == ""} style={last_footer}>{footerMessage ? footerMessage : "<Footer Message>"}</div> 
+                            <div hidden={footerMessage == ""} style={last_footer}>{footerMessage ? footerMessage : "<Footer Message>"}</div>
                         </div>
                     </div>
 

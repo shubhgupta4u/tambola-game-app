@@ -44,6 +44,19 @@ export function DownloadTicketsComponent(
                 setplayerNames(names);
             }
         }
+        document.body.style.minWidth = "21.5cm"; 
+        const menuBtn = document.getElementById("MenuButton");
+        if(menuBtn){
+            menuBtn.style.visibility="hidden";  
+        }  
+        return () => {
+            // Cleanup logic here
+            document.body.style.minWidth = "375px";
+            const menuBtn = document.getElementById("MenuButton");
+            if(menuBtn){
+                menuBtn.style.visibility="visible";  
+            }            
+        };
     }, [])
 
     const htmlStringToPdf = async () => {

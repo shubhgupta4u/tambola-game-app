@@ -11,7 +11,7 @@ export function RecentCalledNumber() {
             {
                 
                 prevCalledNumbers.slice(-6).reverse().map((n,i) => (
-                    (i>0 && (window.innerWidth > 540 || i<5)  )?(
+                    (i>0 && (window.innerWidth > 540 || i<4)  )?(
                         <div key={n} className={`${styles.number} ${i==1?styles.previous_number:""}`} >
                             {n}
                         </div>):""

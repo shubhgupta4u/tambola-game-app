@@ -43,7 +43,7 @@
     width: 100%;
     display: flex;
     max-width: 1400px;
-    min-width: 340px;
+    /* min-width: 340px; */
 }
 .callerContainer{
     width: 25%;
