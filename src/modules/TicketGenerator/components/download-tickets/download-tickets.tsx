@@ -117,15 +117,13 @@ export function DownloadTicketsComponent(
         minHeight: "29.7cm",
         padding: "1cm",
         margin: "10px auto",
-        border: "1px #D3D3D3 solid",
-        borderRadius: "5px",
         background: "white",
-        boxShadow: "0 0 5px rgba(0, 0, 0, 0.1)",
         MozBoxSizing: "border-box",
         boxSizing: "border-box"
     }
     const subPageStyle: any = {
-        border: "5px red solid",
+        border: "3px red solid",
+        borderRadius: "5px",
         outline: "1cm #FFEAEA solid",
         MozBoxSizing: "border-box",
         boxSizing: "border-box",
