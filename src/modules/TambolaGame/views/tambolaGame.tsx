@@ -14,7 +14,19 @@ export function TambolaGame() {
     return (
         <div className={styles.main}>
             <Head>
-                <title>Play Tambola Game</title>
+                <title>Tambola - Online Game</title>
+                <meta data-react-helmet="true" name="description" content="Play Tambola online. This Game is all about your luck and win prizes if fate is with you. Start playing online with your friends!" />
+                <meta data-react-helmet="true" property="og:title" content="Tambola - Online Game" />
+                <meta data-react-helmet="true" property="og:description" content="Play Tambola online. This Game is all about your luck and win prizes if fate is with you. Start playing online with your friends!" />
+                <meta data-react-helmet="true" property="og:type" content="website" />
+                <meta data-react-helmet="true" property="og:image" content="https://tambola.online/images/tambola.png" />
+                <meta data-react-helmet="true" property="og:url" content="https://tambola.online" />
+                <meta data-react-helmet="true" name="twitter:card" content="summary_large_image" />
+                <meta data-react-helmet="true" name="twitter:creator" content="Shubh Gupta" />
+                <meta data-react-helmet="true" name="twitter:title" content="Tambola - Online Game" />
+                <meta data-react-helmet="true" name="twitter:description" content="Play Tambola online. This Game is all about your luck and win prizes if fate is with you. Start playing online with your friends!" />
+                <meta data-react-helmet="true" property="og:image" content="https://tambola.online/images/tambola.png" />
+                <meta data-react-helmet="true" property="twitter:url" content="https://tambola.online" />
             </Head>
             <div className={styles.tng_container}>
                 <div className={`${styles.cf}`}>

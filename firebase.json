@@ -1,6 +1,16 @@
 {
   "hosting": {
     "public": "out",
+    "rewrites": [
+      {
+        "source": "/rules",
+        "destination": "/rules.html"
+      },
+      {
+        "source": "/ticket",
+        "destination": "/ticket.html"
+      }
+    ],
     "ignore": [
       "firebase.json",
       "**/.*",

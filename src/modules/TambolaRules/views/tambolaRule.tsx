@@ -13,7 +13,19 @@ export function TambolaRule() {
     return (
         <div className={styles.ruleContainer}>
             <Head>
-                <title>How to play</title>
+                <title>How to play Tambola Game Online</title>
+                <meta data-react-helmet="true" name="description" content="Learn How to play Tambola Game Online, it's rule and dividents. This Game is all about your luck and win prizes if fate is with you. Start generating personalized tambola game ticket online, download it and play with your friends!" />
+                <meta data-react-helmet="true" property="og:title" content="Learn How to play Tambola Game Online" />
+                <meta data-react-helmet="true" property="og:description" content="Learn How to play Tambola Game Online, it's rule and dividents. This Game is all about your luck and win prizes if fate is with you. Start generating personalized tambola game ticket online, download it and play with your friends!" />
+                <meta data-react-helmet="true" property="og:type" content="website" />
+                <meta data-react-helmet="true" property="og:image" content="https://tambola.online/images/tambola.png" />
+                <meta data-react-helmet="true" property="og:url" content="https://tambola.online/rules" />
+                <meta data-react-helmet="true" name="twitter:card" content="summary_large_image" />
+                <meta data-react-helmet="true" name="twitter:creator" content="Shubh Gupta" />
+                <meta data-react-helmet="true" name="twitter:title" content="Learn How to play Tambola Game Online" />
+                <meta data-react-helmet="true" name="twitter:description" content="Learn How to play Tambola Game Online, it's rule and dividents. This Game is all about your luck and win prizes if fate is with you. Start generating personalized tambola game ticket online, download it and play with your friends!" />
+                <meta data-react-helmet="true" property="og:image" content="https://tambola.online/images/tambola.png" />
+                <meta data-react-helmet="true" property="twitter:url" content="https://tambola.online/rules" />
             </Head>
             <h2 className={`${styles.page_title}`}>How to Play a Tambola Game Easily in 2 Parts?</h2>
             <div className={styles.section_part}>

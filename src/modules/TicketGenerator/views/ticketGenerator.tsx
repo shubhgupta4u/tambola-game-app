@@ -50,7 +50,19 @@ export function TicketGenerator() {
     return (
         <div>
             <Head>
-                <title>Tambola Ticket Generator</title>
+                <title>Generate Personalized Tambola Ticket Online</title>
+                <meta data-react-helmet="true" name="description" content="Generate Tambola Game Ticket Online and Download. This Game is all about your luck and win prizes if fate is with you. Start generating personalized tambola game ticket online, download it and play with your friends!" />
+                <meta data-react-helmet="true" property="og:title" content="Generate Tambola Game Ticket Online" />
+                <meta data-react-helmet="true" property="og:description" content="Generate Tambola Game Ticket Online and Download. This Game is all about your luck and win prizes if fate is with you. Start generating personalized tambola game ticket online, download it and play with your friends!" />
+                <meta data-react-helmet="true" property="og:type" content="website" />
+                <meta data-react-helmet="true" property="og:image" content="https://tambola.online/images/tambola.png" />
+                <meta data-react-helmet="true" property="og:url" content="https://tambola.online/ticket" />
+                <meta data-react-helmet="true" name="twitter:card" content="summary_large_image" />
+                <meta data-react-helmet="true" name="twitter:creator" content="Shubh Gupta" />
+                <meta data-react-helmet="true" name="twitter:title" content="Tambola - Online Game" />
+                <meta data-react-helmet="true" name="twitter:description" content="Generate Tambola Game Ticket Online and Download. This Game is all about your luck and win prizes if fate is with you. Start generating personalized tambola game ticket online, download it and play with your friends!" />
+                <meta data-react-helmet="true" property="og:image" content="https://tambola.online/images/tambola.png" />
+                <meta data-react-helmet="true" property="twitter:url" content="https://tambola.online/ticket" />
             </Head>
 
             <div className={styles.container}>
@@ -99,7 +111,7 @@ export function TicketGenerator() {
                     shouldGenerateTicket &&
                     <div>
                         <DownloadTicketsComponent
-                            ticketCount={+ticketCount > 0?+ticketCount:1}
+                            ticketCount={+ticketCount > 0 ? +ticketCount : 1}
                             code={code === undefined || code.trim() == "" ? "" : code.trim()}
                             hostName={hostName === undefined || hostName.trim() == "" ? "" : hostName.trim()}
                             playersName={playersName === undefined || playersName.trim() == "" ? "" : playersName.trim()}
